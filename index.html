@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thunder Client</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <!--css links-->
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/parameter.css">
+  <link rel="stylesheet" href="./css/response.css">
+  <!--js links-->
+  <script src="./javascript/index.js"></script>
+</head>
+
+
+<!--parameter-->
+
+<div class="parameter"><!--the parameter class-->
+  <!--class for search bar-->
+  <div class="search-bar">
+    <select id="requestType">
+      <option value="get">GET</option>
+      <option value="post">POST</option>
+      <option value="post">PUT</option>
+      <option value="post">DELETE</option>
+      <option value="post">PATCH</option>
+      <option value="post">HEAD</option>
+      <option value="post">OPTIONS</option>
+      <option value="post">PROPFIND</option>
+      <option value="post">CUSTOM</option>
+    </select>
+    <input type="text" placeholder="Enter Url" id="url">
+    <button class="requestsend" onclick="fetchdata()">Send</button>
+  </div>
+
+  <!--slinding windows-->
+  <div class="slider-left">
+    <div>
+      <button>Query
+        <hr>
+      </button>
+      <button onclick="">Headers</button>
+      <button>Auth</button>
+      <button>Body</button>
+      <button>Pre Run</button>
+    </div>
+    <div class="slider-right">
+    </div>
+  </div>
+  <hr class="hr-param">
+</div>
+
+<!--Input space for parameters-->
+<div class="input-param">
+  <div class="query-param">
+    <h1>Query Parameters</h1>
+  </div>
+  <div class="param-input">
+    <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox"></label>
+    <input type="text" placeholder="parameter" class="apeend-input" oninput="appendinput()" onclick="questionmarkadd()">
+    <input type="text" placeholder="value" oninput="appendvalue()" onclick="equalMarkadd">
+  </div>
+  <div class="param-input">
+    <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox"></label>
+    <input type="text" placeholder="parameter">
+    <input type="text" placeholder="value">
+  </div>
+  <div class="param-input">
+    <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox"></label>
+    <input type="text" placeholder="parameter">
+    <input type="text" placeholder="value">
+  </div>
+  <div class="param-input">
+    <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox"></label>
+    <input type="text" placeholder="parameter">
+    <input type="text" placeholder="value">
+  </div>
+  <br><br><br>
+  <hr class="hr-param">
+</div>
+
+<!--Response-->
+<div class="response-div">
+  <div class="upper-responsive">
+    <h4>Status:</h4>
+    <h4>Size:</h4>
+    <h4>Time:</h4>
+  </div>
+  <div class="slider-left">
+    <div>
+      <button>Query
+        <hr>
+      </button>
+      <button onclick="">Headers</button>
+      <button>Auth</button>
+      <button>Body</button>
+      <button>Pre Run</button>
+    </div>
+    <div class="slider-right">
+    </div>
+  </div>
+  <hr class="hr-param">
+</div>
+
+<div class="response-text">
+  <textarea class="response"></textarea>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1F1F1F;
+}
+
+.parameter {
+  display: flex;
+ flex-direction: column;
+ 
+  background-color: #1F1F1F;
+}
+
+.search-bar {
+  display: flex;
+  position: relative;
+  align-items: center; /* Center align items vertically */
+  align-items: center;
+  background-color: #1F1F1F;
+  width: 95%;
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  color: white;
+  box-sizing: border-box; 
+}
+
+.search-bar select,
+.search-bar input {
+  background-color: #1F1F1F;
+  border: 1px solid #9D9D9D; 
+  color: white; 
+  font-size: 15px;
+  vertical-align: middle; /* Align items vertically in the middle */
+}
+
+
+.search-bar select {
+  width: 70px; /* Set width for the select element */
+  font-size:  15.5px ;
+}
+
+.search-bar input {
+  flex-grow: 1; /* Allow the search bar to take up most of the space */
+}
+
+.search-bar button {
+  background-color: #0078D4;
+  border: none;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+
+/**Types of Parameter*/
+
+.slider{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.slider-left{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.slider-left button{
+  background-color: #1F1F1F;
+  border: none;
+  color:#9D9D9D;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.slider-left button hr{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border: none;
+  height: 2px;
+  background-color: #0078D4;
+}
+
+.slider-right{
+  width: 35%;
+}
+
+.hr-param{
+  margin-top: 0px;
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: #9D9D9D; 
+}
+
+
+/**Input Space for parameters*/ 
+.input-param{
+  display: flex;
+  flex-direction: column;
+}
+
+.query-param{
+  font-size: 10px;
+  padding: 10px;
+  color: #9D9D9D;
+}
+
+.param-input{
+  display: flex;
+  flex-direction: row;
+}
+
+.param-input input{
+  background-color: #1F1F1F;
+  border: none;
+  margin: 15px;
+  border-bottom:0.5px solid #9D9D9D;
+}
+
+
+/* Hide the default checkbox */
+#myCheckbox {
+  display: none;
+}
+
+/* Style the label to create a custom checkbox */
+#myCheckbox + label {
+  display: flex;
+  margin-top: 15px;
+  flex-direction: row;
+  cursor: pointer;
+  border-radius: 16px;
+  padding-left: 25px;
+  background-color:#1F1F1F;
+}
+
+/* Create the visual appearance of the custom checkbox */
+#myCheckbox + label:before {
+  content: '';
+  width: 15px; 
+  height: 15px; 
+  border: 1px solid #9D9D9D; 
+  background-color: #1F1F1F; 
+}
+
+/* Create the tick mark inside the custom checkbox */
+#myCheckbox:checked + label:before {
+  content: '\2713'; /* Unicode checkmark symbol */
+  font-size: 16px; /* Size of the checkmark */
+  color: #007bff; /* Color of the checkmark */
+  line-height: 20px; /* Center the checkmark vertically */
+  text-align: center; /* Center the checkmark horizontally */
+}
