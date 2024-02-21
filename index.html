@@ -48,8 +48,7 @@
       <button>Body</button>
       <button>Pre Run</button>
     </div>
-    <div class="slider-right">
-    </div>
+    
   </div>
   <hr class="hr-param">
 </div>
@@ -62,8 +61,8 @@
   <div class="param-input">
     <input type="checkbox" id="myCheckbox">
     <label for="myCheckbox"></label>
-    <input type="text" placeholder="parameter" class="apeend-input" oninput="appendinput()" onclick="questionmarkadd()">
-    <input type="text" placeholder="value" oninput="appendvalue()" onclick="equalMarkadd">
+    <input type="text" placeholder="parameter" id="append-input" oninput="addParam()" onclick="questionmarkadd()">
+    <input type="text" placeholder="value" id= "append-value" oninput="addValue()" onclick="equalToAdd()">
   </div>
   <div class="param-input">
     <input type="checkbox" id="myCheckbox">
@@ -103,8 +102,6 @@
       <button>Auth</button>
       <button>Body</button>
       <button>Pre Run</button>
-    </div>
-    <div class="slider-right">
     </div>
   </div>
   <hr class="hr-param">
